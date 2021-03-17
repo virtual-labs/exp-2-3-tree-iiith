@@ -1,0 +1,145 @@
+{
+  "unit-type": "lu",
+  "label": "2-3 Tree",
+  "basedir": ".",
+  "units": [
+    {
+      "unit-type": "aim"
+    },
+    {
+      "unit-type": "task",
+      "label": "Overview",
+      "content-type": "video",
+      "source": "overview.md",
+      "target": "overview.html"
+    },
+    {
+      "unit-type": "task",
+      "label": "Pre Test Instructions",
+      "content-type": "video",
+      "source": "pre-test.md",
+      "target": "pre-test.html"
+    },
+    {
+      "unit-type": "task",
+      "label": "Pre Test Quiz",
+      "content-type": "assesment",
+      "source": "pretest.js",
+      "target": "pretest.html"
+    },
+    {
+      "unit-type": "lu",
+      "label": "2-3 Tree",
+      "basedir": "2-3-tree",
+      "units": [
+        {
+          "unit-type": "aim"
+        },
+        {
+          "unit-type": "task",
+          "label": "Overview",
+          "content-type": "video",
+          "source": "overview.md",
+          "target": "overview.html"
+        },
+	{
+          "unit-type": "task",
+          "label": "Basics of 2-3 Tree",
+          "content-type": "video",
+          "source": "basic-of-2-3-tee.md",
+          "target": "basic-of-2-3-tee.html"
+        },	
+	{
+         "unit-type": "task",
+         "label": "2-3 Tree Quiz",
+         "content-type": "assesment",
+         "source": "2-3-quiz.js",
+         "target": "2-3-quiz.html"
+       }
+      
+      ]
+    },
+   
+        {
+      "unit-type": "lu",
+      "label": "Operations",
+      "basedir": "operations",
+      "units": [
+        {
+          "unit-type": "aim"
+        },
+	{
+          "unit-type": "task",
+          "label": "Overview",
+          "content-type": "video",
+          "source": "overview.md",
+          "target": "overview.html"
+        },
+        {
+          "unit-type": "task",
+          "label": "Search",
+          "content-type": "video",
+          "source": "search.md",
+          "target": "search.html"
+        },
+        {
+          "unit-type": "task",
+          "label": "Insertion",
+          "content-type": "video",
+          "source": "insertion.md",
+          "target": "insertion.html"
+        },
+	{
+          "unit-type": "task",
+          "label": "Deletion",
+          "content-type": "video",
+          "source": "deletion.md",
+          "target": "deletion.html"
+        },
+        {
+          "unit-type": "task",
+          "label": "2-3 tree Demo",
+          "content-type": "simulation",
+          "source": "simulation/TwoThreeTreeDemo.html",
+          "target": "TwoThreeTreeDemo.html"
+        },
+	{
+          "unit-type": "task",
+          "label": "2-3 tree Practice",
+          "content-type": "simulation",
+          "source": "simulation/TwoThreeTreePractice.html",
+          "target": "TwoThreeTreePractice.html"
+        },
+	{
+          "unit-type": "task",
+          "label": "2-3 tree Exercise",
+          "content-type": "simulation",
+          "source": "simulation/TwoThreeTreeExercise.htmll",
+          "target": "TwoThreeTreeExercise.html"
+        }
+      ]
+    },
+    {
+          "unit-type": "task",
+          "label": "Post Test Quiz Instructions",
+          "content-type": "video",
+          "source": "post-test.md",
+          "target": "post-test.html"
+        },
+    {
+      "unit-type": "task",
+      "label": "Post Test Quiz",
+      "content-type": "assesment",
+      "source": "posttest.js",
+      "target": "posttest.html"
+    },
+       
+    {
+      "unit-type": "task",
+      "label": "Further Readings/References",
+      "content-type": "text",
+      "source": "further-reading-and-references.md",
+      "target": "further-reading-and-references.html"
+    }
+  ]
+}
