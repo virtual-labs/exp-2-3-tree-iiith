@@ -30,7 +30,7 @@
     {
       "unit-type": "lu",
       "label": "2-3 Tree",
-      "basedir": "2-3-tree",
+      "basedir": "2-3-tree-basics",
       "units": [
         {
           "unit-type": "aim"
