@@ -4,9 +4,9 @@
 
 ### Prerequisites of the Experiment
 
-    Basic knowledge of
-      - [Binary Tree](https://www.geeksforgeeks.org/binary-tree-data-structure/)
-      - [Binary Search Tree](https://www.geeksforgeeks.org/binary-search-tree-data-structure/)
+Basic knowledge of
+  - [Binary Tree](https://www.geeksforgeeks.org/binary-tree-data-structure/)
+  - [Binary Search Tree](https://www.geeksforgeeks.org/binary-search-tree-data-structure/)
     
 And above all, a curiosity to learn and explore!
 
