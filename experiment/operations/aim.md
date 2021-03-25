@@ -1,3 +1,7 @@
+### Estimated Time
+
+30 minutes
+
 ### Operations on 2-3 trees
 
 Welcome to this module on operations on 2-3 tree! Take a look at what you will go through in this module.

@@ -13,13 +13,7 @@
       "source": "overview.md",
       "target": "overview.html"
     },
-    {
-      "unit-type": "task",
-      "label": "Pre Test Instructions",
-      "content-type": "video",
-      "source": "pre-test.md",
-      "target": "pre-test.html"
-    },
+    
     {
       "unit-type": "task",
       "label": "Pre Test Quiz",
@@ -35,23 +29,17 @@
         {
           "unit-type": "aim"
         },
-        {
-          "unit-type": "task",
-          "label": "Overview",
-          "content-type": "video",
-          "source": "overview.md",
-          "target": "overview.html"
-        },
+        
 	{
           "unit-type": "task",
-          "label": "Basics of 2-3 Tree",
+          "label": "Basics ",
           "content-type": "video",
           "source": "basic-of-2-3-tee.md",
           "target": "basic-of-2-3-tee.html"
         },	
 	{
          "unit-type": "task",
-         "label": "2-3 Tree Quiz",
+         "label": " Quiz",
          "content-type": "assesment",
          "source": "2-3-quiz.js",
          "target": "2-3-quiz.html"
@@ -68,13 +56,7 @@
         {
           "unit-type": "aim"
         },
-	{
-          "unit-type": "task",
-          "label": "Overview",
-          "content-type": "video",
-          "source": "overview.md",
-          "target": "overview.html"
-        },
+	
         {
           "unit-type": "task",
           "label": "Search",
@@ -98,21 +80,21 @@
         },
         {
           "unit-type": "task",
-          "label": "2-3 tree Demo",
+          "label": " Demo",
           "content-type": "simulation",
           "source": "simulation/TwoThreeTreeDemo.html",
           "target": "TwoThreeTreeDemo.html"
         },
 	{
           "unit-type": "task",
-          "label": "2-3 tree Practice",
+          "label": " Practice",
           "content-type": "simulation",
           "source": "simulation/TwoThreeTreePractice.html",
           "target": "TwoThreeTreePractice.html"
         },
 	{
           "unit-type": "task",
-          "label": "2-3 tree Exercise",
+          "label": "  Exercise",
           "content-type": "simulation",
           "source": "simulation/TwoThreeTreeExercise.html",
           "target": "TwoThreeTreeExercise.html"
