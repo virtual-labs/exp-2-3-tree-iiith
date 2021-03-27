@@ -1,4 +1,4 @@
-### 2-3 Deletion Video
+
 <iframe src="https://www.youtube.com/embed/t_LJ1Gh1AAw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ### Intuition
