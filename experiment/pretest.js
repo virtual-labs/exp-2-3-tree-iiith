@@ -136,7 +136,7 @@ answers: {
 a: "O(log N)",                  ///// Write the option 1 inside double quotes
 b: "O(N) ",                  ///// Write the option 2 inside double quotes
 c: "O(1) ", ///// Write the option 3 inside double quotes
-d: "O(1) None of the above", ///// Write the option 3 inside double quotes
+d: "None of the above", ///// Write the option 3 inside double quotes
 },
 correctAnswer: "b"                ///// Write the correct option inside double quotes
 },

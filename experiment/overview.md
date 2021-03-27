@@ -1,6 +1,7 @@
-### Estimated Time
+### Overview of the Experiment
 
-1 hour
+The experiment features a series of modules with video lectures, hands-on practice exercises and quizzes for self analysis.
+Learning Objectives of the Experiment
 
 ### Prerequisites of the Experiment
 
@@ -9,11 +10,6 @@ Basic knowledge of
   - [Binary Search Tree](https://www.geeksforgeeks.org/binary-search-tree-data-structure/)
     
 And above all, a curiosity to learn and explore!
-
-### Overview of the Experiment
-
-The experiment features a series of modules with video lectures, hands-on practice exercises and quizzes for self analysis.
-Learning Objectives of the Experiment
 
 ### Experiment Modules & their Weightage
 |Module 	|Weightage 	|Expectation|
