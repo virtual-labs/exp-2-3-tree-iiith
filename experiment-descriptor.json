@@ -32,7 +32,7 @@
         
 	{
           "unit-type": "task",
-          "label": "Basics ",
+          "label": "Concept ",
           "content-type": "video",
           "source": "basic-of-2-3-tee.md",
           "target": "basic-of-2-3-tee.html"
