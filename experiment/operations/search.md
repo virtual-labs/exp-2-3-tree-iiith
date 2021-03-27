@@ -1,4 +1,4 @@
-### 2-3 Search Video
+
 <iframe src="https://www.youtube.com/embed/QrD1_ya1bJ0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ### Intuition
