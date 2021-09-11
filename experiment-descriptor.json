@@ -13,7 +13,14 @@
       "source": "overview.md",
       "target": "overview.html"
     },
-
+    
+    {
+      "unit-type": "task",
+      "label": "Pre Test Quiz",
+      "content-type": "assesment",
+      "source": "pretest.json",
+      "target": "pretest.html"
+    },
     {
       "unit-type": "lu",
       "label": "2-3 Tree",
@@ -29,7 +36,15 @@
           "content-type": "video",
           "source": "basic-of-2-3-tee.md",
           "target": "basic-of-2-3-tee.html"
-        }
+        },	
+	{
+         "unit-type": "task",
+         "label": " Quiz",
+         "content-type": "assesment",
+         "source": "2-3-quiz.json",
+         "target": "2-3-quiz.html"
+       }
+      
       ]
     },
    
@@ -86,7 +101,14 @@
         }
       ]
     },
-
+    
+    {
+      "unit-type": "task",
+      "label": "Post Test Quiz",
+      "content-type": "assesment",
+      "source": "posttest.json",
+      "target": "posttest.html"
+    },
        
     {
       "unit-type": "task",
