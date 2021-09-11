@@ -1,1 +1,81 @@
-[{"question":"1. Which of the following statements are correct about a binary tree? ","answers":{"a":"A node in a binary tree can have exactly two children ","b":"A node in a binary tree can have atmost two children ","c":"A node in a binary tree can have two or more children ","d":"A node in a binary tree can have two or more children "},"correctAnswer":"b"},{"question":"2. Node values in a binary tree always appear in a sorted order from root to leaf, going left to right at each level. ","answers":{"a":"True ","b":" False "},"correctAnswer":"b"},{"question":"3. Which of the following is TRUE about the leaf nodes of a binary tree? ","answers":{"a":"Leaf nodes in a binary tree have no children ","b":"Atleast one leaf node in a binary tree has two chidren ","c":"Leaf nodes in a binary tree are allowed to have more than two children ","d":"Leaf nodes in a binary tree may or may not have child nodes "},"correctAnswer":"a"},{"question":"4. In a binary search tree all nodes in the left subtree are __________. ","answers":{"a":"SMALLER than the root ","b":"GREATER than the root ","c":"EQUAL to the root "},"correctAnswer":"a"},{"question":"5. What is the worst case height possible in a binary search tree? Let N be the number of nodes in the tree. ","answers":{"a":"O(log N)","b":"O(N) ","c":"O(1) ","d":"None of the above"},"correctAnswer":"b"}]
+{
+    "version": 2.0,
+    "questions": [
+        {
+            "question": "1. How many children can a node in a binary tree have?",
+            "answers": {
+                "a": "At Most two",
+                "b": "Exactly two",
+                "c": "At Least two",
+                "d": "None. A binary tree node cannot have children."
+            },
+            "correctAnswer": "a",
+            "explanations": {
+                "a": "A binary tree node can have either none, one or two children but not more than two.",
+                "b": "It is not necessary for a binary tree node to have exactly two children. A node may have only one child.",
+                "c": "It is not possible for a binary tree node to have more than 2 children.",
+                "d": "Normal nodes in a binary tree have children. Leaf nodes do not have children."
+            },
+            "difficulty": "beginner"
+        },
+        {
+            "question": "2. Node values in a binary tree are sorted, i.e., values smaller than root are on the left side of root and values greater than root are on the right side of root?",
+            "answers": {
+                "a": "True",
+                "b": "False"
+            },
+            "correctAnswer": "b",
+            "explanations": {
+                "a": "It is not necessary for the binary tree node values to be in sorted order.",
+                "b": "Normal Binary Trees need not have sorted node values. However, Binary Search Trees need to have their node values sorted in the mentioned order."
+            },
+            "difficulty": "beginner"
+        },
+        {
+            "question": "3. The worst case height of a Binary Search Tree with \u2018n\u2019 nodes is:",
+            "answers": {
+                "a": "O(log n)",
+                "b": "O(1)",
+                "c": "O(n)",
+                "d": "None of these"
+            },
+            "correctAnswer": "c",
+            "explanations": {
+                "a": "The worst case would be when a Binary search tree becomes a skew tree with only one side of the root being filled. The time complexity then would become greater than the selected option, which signifies the average case height.",
+                "b": "The worst case would be when a Binary search tree becomes a skew tree with only one side of the root being filled. The time complexity then would become greater than the selected option, which signifies the optimal case height.",
+                "c": "In cases when the Binary search tree becomes a skew tree, the height of the tree would become O(n) instead of the average case height O(log n)."
+            },
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "4. The inorder traversal in a binary search tree signifies traversing:",
+            "answers": {
+                "a": "in a random order",
+                "b": "in a decreasing or descending order",
+                "c": "in an increasing or ascending order",
+                "d": "none of these"
+            },
+            "correctAnswer": "c",
+            "explanations": {
+                "a": "Since Binary search trees are sorted with smaller values on the left side of root and larger values on the right side of root, inorder traversal would not be in a random order.",
+                "b": "Since Binary search trees are sorted with smaller values on the left side of root and larger values on the right side of root, inorder traversal would not be in a decreasing or descending order.",
+                "c": "Since Binary search trees are sorted with smaller values on the left side of root and larger values on the right side of root, inorder traversal would indeed be in an increasing or ascending order."
+            },
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "5. A binary tree is the optimal data structure for implementing Undo/Redo operations.",
+            "answers": {
+                "a": "True",
+                "b": "False"
+            },
+            "correctAnswer": "b",
+            "explanations": {
+                "a": "Binary trees are good for implementations of operations requiring Hierarchical structure, Faster searching, and Router algorithms but they are not the optimal choice for implementation of Undo/Redo operations.",
+                "b": "Although Binary trees have their own strengths, Stack would be the optimal data structure for implementing Undo/Redo operations because of their Last-in-first-out property."
+            },
+            "difficulty": "advanced"
+        }
+    ]
+}
+   

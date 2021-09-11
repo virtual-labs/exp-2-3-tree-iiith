@@ -18,7 +18,7 @@
       "unit-type": "task",
       "label": "Pre Test Quiz",
       "content-type": "assesment",
-      "source": "pretest.js",
+      "source": "pretest.json",
       "target": "pretest.html"
     },
     {
@@ -41,7 +41,7 @@
          "unit-type": "task",
          "label": " Quiz",
          "content-type": "assesment",
-         "source": "2-3-quiz.js",
+         "source": "2-3-quiz.json",
          "target": "2-3-quiz.html"
        }
       
@@ -106,7 +106,7 @@
       "unit-type": "task",
       "label": "Post Test Quiz",
       "content-type": "assesment",
-      "source": "posttest.js",
+      "source": "posttest.json",
       "target": "posttest.html"
     },
        
