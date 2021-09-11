@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-03-17 Wed 07:39 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="VLEAD" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2017 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org12b3dd7">1. License</a></li>
+<li><a href="#org11cffd5">2. Introduction</a></li>
+<li><a href="#orgdb98df8">3. Javascript Code for adding lines between nodes</a>
+<ul>
+<li><a href="#org9a4fa6d">3.1. Constructor function to initialize properties of a line.</a></li>
+<li><a href="#orgaeb2141">3.2. Function to add arrow</a></li>
+</ul>
+</li>
+<li><a href="#org2537ed8">4. Tangle</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org12b3dd7" class="outline-2">
+<h2 id="org12b3dd7"><span class="section-number-2">1</span> License</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+<i>/ Copyright 2011 David Galles, University of San Francisco. All rights reserved.
+/</i>
+<i>/ Redistribution and use in source and binary forms, with or without modification, are
+/</i> permitted provided that the following conditions are met:
+<i>/
+/</i> 1. Redistributions of source code must retain the above copyright notice, this list of
+<i>/ conditions and the following disclaimer.
+/</i>
+<i>/ 2. Redistributions in binary form must reproduce the above copyright notice, this list
+/</i> of conditions and the following disclaimer in the documentation and/or other materials
+<i>/ provided with the distribution.
+/</i>
+<i>/ THIS SOFTWARE IS PROVIDED BY &lt;COPYRIGHT HOLDER&gt; ``AS IS'' AND ANY EXPRESS OR IMPLIED
+/</i> WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+<i>/ FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL &lt;COPYRIGHT HOLDER&gt; OR
+/</i> CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+<i>/ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+/</i> SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+<i>/ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+/</i> NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+<i>/ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+/</i>
+<i>/ The views and conclusions contained in the software and documentation are those of the
+/</i> authors and should not be interpreted as representing official policies, either expressed
+// or implied, of the University of San Francisco
+</p>
+</div>
+</div>
+<div id="outline-container-org11cffd5" class="outline-2">
+<h2 id="org11cffd5"><span class="section-number-2">2</span> Introduction</h2>
+</div>
+<div id="outline-container-orgdb98df8" class="outline-2">
+<h2 id="orgdb98df8"><span class="section-number-2">3</span> Javascript Code for adding lines between nodes</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org9a4fa6d" class="outline-3">
+<h3 id="org9a4fa6d"><span class="section-number-3">3.1</span> Constructor function to initialize properties of a line.</h3>
+<div class="outline-text-3" id="text-3-1">
+<div class="org-src-container">
+<pre class="src src-js" id="orgb8b89ef">
+
+<span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">LINE_maxHeightDiff</span> = 5;
+<span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">LINE_minHeightDiff</span> = 3;
+<span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">LINE_range</span>= LINE_maxHeightDiff - LINE_minHeightDiff + 1;
+<span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">LINE_highlightDiff</span> = 3;
+
+        
+<span style="font-weight: bold;">function</span> <span style="font-weight: bold;">Line</span>(<span style="font-weight: bold; font-style: italic;">n1</span>, <span style="font-weight: bold; font-style: italic;">n2</span>, <span style="font-weight: bold; font-style: italic;">color</span>, <span style="font-weight: bold; font-style: italic;">cv</span>, <span style="font-weight: bold; font-style: italic;">d</span>, <span style="font-weight: bold; font-style: italic;">weight</span>, <span style="font-weight: bold; font-style: italic;">anchorIndex</span>)
+{
+        <span style="font-weight: bold; text-decoration: underline;">this</span>.arrowHeight = 12;
+        <span style="font-weight: bold; text-decoration: underline;">this</span>. arrowWidth = 4;
+
+        <span style="font-weight: bold; text-decoration: underline;">this</span>.Node1 = n1;
+        <span style="font-weight: bold; text-decoration: underline;">this</span>.Node2 = n2;
+        <span style="font-weight: bold; text-decoration: underline;">this</span>.Dirty = <span style="font-weight: bold; text-decoration: underline;">false</span>;
+        <span style="font-weight: bold; text-decoration: underline;">this</span>.directed = d;
+        <span style="font-weight: bold; text-decoration: underline;">this</span>.edgeColor = color;
+        <span style="font-weight: bold; text-decoration: underline;">this</span>.edgeLabel = weight;
+        <span style="font-weight: bold; text-decoration: underline;">this</span>.highlighted = <span style="font-weight: bold; text-decoration: underline;">false</span>;
+        <span style="font-weight: bold; text-decoration: underline;">this</span>.addedToScene = <span style="font-weight: bold; text-decoration: underline;">true</span>;
+        <span style="font-weight: bold; text-decoration: underline;">this</span>.anchorPoint = anchorIndex;
+        <span style="font-weight: bold; text-decoration: underline;">this</span>.highlightDiff = 0;
+        <span style="font-weight: bold; text-decoration: underline;">this</span>.curve = cv;
+
+        <span style="font-weight: bold; text-decoration: underline;">this</span>.alpha = 1.0;
+        <span style="font-weight: bold; text-decoration: underline;">this</span>.color = <span style="font-weight: bold;">function</span> color()
+        {
+                <span style="font-weight: bold;">return</span> <span style="font-weight: bold; text-decoration: underline;">this</span>.edgeColor;   
+        }
+           
+        <span style="font-weight: bold; text-decoration: underline;">this</span>.setColor = <span style="font-weight: bold;">function</span>(<span style="font-weight: bold; font-style: italic;">newColor</span>)
+        {
+                <span style="font-weight: bold; text-decoration: underline;">this</span>.edgeColor = newColor;
+                Dirty = <span style="font-weight: bold; text-decoration: underline;">true</span>;
+        }
+           
+        <span style="font-weight: bold; text-decoration: underline;">this</span>.setHighlight = <span style="font-weight: bold;">function</span>(<span style="font-weight: bold; font-style: italic;">highlightVal</span>)
+        {
+                <span style="font-weight: bold; text-decoration: underline;">this</span>.highlighted = highlightVal;   
+        }
+                   
+        <span style="font-weight: bold; text-decoration: underline;">this</span>.pulseHighlight = <span style="font-weight: bold;">function</span>(<span style="font-weight: bold; font-style: italic;">frameNum</span>)
+        {
+           <span style="font-weight: bold;">if</span> (<span style="font-weight: bold; text-decoration: underline;">this</span>.highlighted)
+           {
+                   <span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">frameMod</span> = frameNum / 14.0;
+                   <span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">delta</span>  = Math.abs((frameMod) % (2 * LINE_range  - 2) - LINE_range + 1)
+                   <span style="font-weight: bold; text-decoration: underline;">this</span>.highlightDiff =  delta + LINE_minHeightDiff;
+                   Dirty = <span style="font-weight: bold; text-decoration: underline;">true</span>;                           
+           }
+        }
+           
+           
+        <span style="font-weight: bold; text-decoration: underline;">this</span>.hasNode = <span style="font-weight: bold;">function</span>(<span style="font-weight: bold; font-style: italic;">n</span>)
+        {
+                <span style="font-weight: bold;">return</span> ((<span style="font-weight: bold; text-decoration: underline;">this</span>.Node1 == n) || (<span style="font-weight: bold; text-decoration: underline;">this</span>.Node2 == n));   
+        }
+           
+           
+        <span style="font-weight: bold; text-decoration: underline;">this</span>.createUndoDisconnect  = <span style="font-weight: bold;">function</span>()
+        {
+                <span style="font-weight: bold;">return</span> <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">UndoConnect</span>(<span style="font-weight: bold; text-decoration: underline;">this</span>.Node1.objectID, <span style="font-weight: bold; text-decoration: underline;">this</span>.Node2.objectID, <span style="font-weight: bold; text-decoration: underline;">true</span>, <span style="font-weight: bold; text-decoration: underline;">this</span>.edgeColor, <span style="font-weight: bold; text-decoration: underline;">this</span>.directed, <span style="font-weight: bold; text-decoration: underline;">this</span>.curve, <span style="font-weight: bold; text-decoration: underline;">this</span>.edgeLabel, <span style="font-weight: bold; text-decoration: underline;">this</span>.anchorPoint);
+        }
+           
+           
+        <span style="font-weight: bold; text-decoration: underline;">this</span>.sign = <span style="font-weight: bold;">function</span>(<span style="font-weight: bold; font-style: italic;">n</span>)
+        {
+           <span style="font-weight: bold;">if</span> (n &gt; 0)
+           {
+                   <span style="font-weight: bold;">return</span> 1;
+           }
+           <span style="font-weight: bold;">else</span>
+           {
+                   <span style="font-weight: bold;">return</span> -1;
+           }
+        }
+        
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgaeb2141" class="outline-3">
+<h3 id="orgaeb2141"><span class="section-number-3">3.2</span> Function to add arrow</h3>
+<div class="outline-text-3" id="text-3-2">
+<div class="org-src-container">
+<pre class="src src-js" id="orged08d0e">           
+        <span style="font-weight: bold; text-decoration: underline;">this</span>.drawArrow = <span style="font-weight: bold;">function</span>(<span style="font-weight: bold; font-style: italic;">pensize</span>, <span style="font-weight: bold; font-style: italic;">color</span>, <span style="font-weight: bold; font-style: italic;">context</span>)
+        {               
+                context.strokeStyle = color;
+                context.fillStyle = color;
+                context.lineWidth = pensize;
+                <span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">fromPos</span> = <span style="font-weight: bold; text-decoration: underline;">this</span>.Node1.getTailPointerAttachPos(<span style="font-weight: bold; text-decoration: underline;">this</span>.Node2.x, <span style="font-weight: bold; text-decoration: underline;">this</span>.Node2.y, <span style="font-weight: bold; text-decoration: underline;">this</span>.anchorPoint);
+                <span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">toPos</span> = <span style="font-weight: bold; text-decoration: underline;">this</span>.Node2.getHeadPointerAttachPos(<span style="font-weight: bold; text-decoration: underline;">this</span>.Node1.x, <span style="font-weight: bold; text-decoration: underline;">this</span>.Node1.y);
+
+                <span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">fromPos</span> = <span style="font-weight: bold; text-decoration: underline;">this</span>.Node1.getTailPointerAttachPos(<span style="font-weight: bold; text-decoration: underline;">this</span>.Node2.x, <span style="font-weight: bold; text-decoration: underline;">this</span>.Node2.y, <span style="font-weight: bold; text-decoration: underline;">this</span>.anchorPoint);
+                <span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">toPos</span> = <span style="font-weight: bold; text-decoration: underline;">this</span>.Node2.getHeadPointerAttachPos(<span style="font-weight: bold; text-decoration: underline;">this</span>.Node1.x, <span style="font-weight: bold; text-decoration: underline;">this</span>.Node1.y);
+
+                <span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">deltaX</span> = toPos[0] - fromPos[0];
+                <span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">deltaY</span> = toPos[1] - fromPos[1];
+                <span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">midX</span> = (deltaX) / 2.0 + fromPos[0];
+                <span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">midY</span> = (deltaY) / 2.0 + fromPos[1];
+                <span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">controlX</span> = midX - deltaY * <span style="font-weight: bold; text-decoration: underline;">this</span>.curve;
+
+                <span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">controlY</span> = midY + deltaX * <span style="font-weight: bold; text-decoration: underline;">this</span>.curve;
+
+                context.beginPath();
+                context.moveTo(fromPos[0], fromPos[1]);
+                context.quadraticCurveTo(controlX, controlY, toPos[0], toPos[1]);
+                context.stroke();
+                <span style="font-weight: bold; font-style: italic;">//</span><span style="font-weight: bold; font-style: italic;">context.closePath();</span>
+                        
+                <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Position of the edge label:  First, we will place it right along the</span>
+                <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">middle of the curve (or the middle of the line, for curve == 0)</span>
+                <span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">labelPosX</span> = 0.25* fromPos[0] + 0.5*controlX + 0.25*toPos[0]; 
+                <span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">labelPosY</span> =  0.25* fromPos[1] + 0.5*controlY + 0.25*toPos[1]; 
+                        
+                <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Next, we push the edge position label out just a little in the direction of</span>
+                <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">the curve, so that the label doesn't intersect the cuve (as long as the label</span>
+                <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">is only a few characters, that is)</span>
+                <span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">midLen</span> = Math.sqrt(deltaY*deltaY + deltaX*deltaX);
+                <span style="font-weight: bold;">if</span> (midLen != 0)
+                {
+                        labelPosX +=  (- deltaY * <span style="font-weight: bold; text-decoration: underline;">this</span>.sign(<span style="font-weight: bold; text-decoration: underline;">this</span>.curve))  / midLen * 10 
+                        labelPosY += ( deltaX * <span style="font-weight: bold; text-decoration: underline;">this</span>.sign(<span style="font-weight: bold; text-decoration: underline;">this</span>.curve))  / midLen * 10  
+                }
+                        
+
+
+                context.textAlign = <span style="font-style: italic;">'center'</span>;
+                context.font         = <span style="font-style: italic;">'10px sans-serif'</span>;
+                context.textBaseline   = <span style="font-style: italic;">'middle'</span>; 
+                context.fillText(<span style="font-weight: bold; text-decoration: underline;">this</span>.edgeLabel, labelPosX, labelPosY);
+
+                <span style="font-weight: bold;">if</span> (<span style="font-weight: bold; text-decoration: underline;">this</span>.directed)
+                {
+                        <span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">xVec</span> = controlX - toPos[0];
+                        <span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">yVec</span> = controlY - toPos[1];
+                        <span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">len</span> = Math.sqrt(xVec * xVec + yVec*yVec);
+                
+                        <span style="font-weight: bold;">if</span> (len &gt; 0)
+                        {
+                                xVec = xVec / len
+                                yVec = yVec / len;
+                                
+                                context.beginPath();
+                                context.moveTo(toPos[0], toPos[1]);
+                                context.lineTo(toPos[0] + xVec*<span style="font-weight: bold; text-decoration: underline;">this</span>.arrowHeight - yVec*<span style="font-weight: bold; text-decoration: underline;">this</span>.arrowWidth, toPos[1] + yVec*<span style="font-weight: bold; text-decoration: underline;">this</span>.arrowHeight + xVec*<span style="font-weight: bold; text-decoration: underline;">this</span>.arrowWidth);
+                                context.lineTo(toPos[0] + xVec*<span style="font-weight: bold; text-decoration: underline;">this</span>.arrowHeight + yVec*<span style="font-weight: bold; text-decoration: underline;">this</span>.arrowWidth, toPos[1] + yVec*<span style="font-weight: bold; text-decoration: underline;">this</span>.arrowHeight - xVec*<span style="font-weight: bold; text-decoration: underline;">this</span>.arrowWidth);
+                                context.lineTo(toPos[0], toPos[1]);
+                                context.closePath();
+                                context.stroke();
+                                context.fill();
+                        }
+
+                }
+                   
+           }
+           
+           
+           <span style="font-weight: bold; text-decoration: underline;">this</span>.draw = <span style="font-weight: bold;">function</span>(<span style="font-weight: bold; font-style: italic;">ctx</span>)
+           {
+                   <span style="font-weight: bold;">if</span> (!<span style="font-weight: bold; text-decoration: underline;">this</span>.addedToScene)
+                   {
+                           <span style="font-weight: bold;">return</span>;   
+                   }
+                   ctx.globalAlpha = <span style="font-weight: bold; text-decoration: underline;">this</span>.alpha;
+
+                        <span style="font-weight: bold;">if</span> (<span style="font-weight: bold; text-decoration: underline;">this</span>.highlighted)
+                                <span style="font-weight: bold; text-decoration: underline;">this</span>.drawArrow(<span style="font-weight: bold; text-decoration: underline;">this</span>.highlightDiff, <span style="font-style: italic;">"#FF0000"</span>, ctx);
+                        <span style="font-weight: bold; text-decoration: underline;">this</span>.drawArrow(1, <span style="font-weight: bold; text-decoration: underline;">this</span>.edgeColor, ctx);
+           }
+           
+           
+}
+        
+
+
+<span style="font-weight: bold;">function</span> <span style="font-weight: bold;">UndoConnect</span>(<span style="font-weight: bold; font-style: italic;">from</span>, <span style="font-weight: bold; font-style: italic;">to</span>, <span style="font-weight: bold; font-style: italic;">createConnection</span>, <span style="font-weight: bold; font-style: italic;">edgeColor</span>, <span style="font-weight: bold; font-style: italic;">isDirected</span>, <span style="font-weight: bold; font-style: italic;">cv</span>, <span style="font-weight: bold; font-style: italic;">lab</span>, <span style="font-weight: bold; font-style: italic;">anch</span>)
+{
+        <span style="font-weight: bold; text-decoration: underline;">this</span>.fromID = from;
+        <span style="font-weight: bold; text-decoration: underline;">this</span>.toID = to;
+        <span style="font-weight: bold; text-decoration: underline;">this</span>.connect = createConnection;
+        <span style="font-weight: bold; text-decoration: underline;">this</span>.color = edgeColor;
+        <span style="font-weight: bold; text-decoration: underline;">this</span>.directed = isDirected;
+        <span style="font-weight: bold; text-decoration: underline;">this</span>.curve = cv;
+        <span style="font-weight: bold; text-decoration: underline;">this</span>.edgeLabel = lab;
+        <span style="font-weight: bold; text-decoration: underline;">this</span>.anchorPoint = anch;
+}
+
+
+UndoConnect.<span style="font-weight: bold; text-decoration: underline;">prototype</span>.undoInitialStep = <span style="font-weight: bold;">function</span>(<span style="font-weight: bold; font-style: italic;">world</span>)
+{
+        <span style="font-weight: bold;">if</span> (<span style="font-weight: bold; text-decoration: underline;">this</span>.connect)
+        {
+                world.connectEdge(<span style="font-weight: bold; text-decoration: underline;">this</span>.fromID, <span style="font-weight: bold; text-decoration: underline;">this</span>.toID, <span style="font-weight: bold; text-decoration: underline;">this</span>.color, <span style="font-weight: bold; text-decoration: underline;">this</span>.curve, <span style="font-weight: bold; text-decoration: underline;">this</span>.directed, <span style="font-weight: bold; text-decoration: underline;">this</span>.edgeLabel,<span style="font-weight: bold; text-decoration: underline;">this</span>.anchorPoint);
+        }
+        <span style="font-weight: bold;">else</span>
+        {
+                world.disconnect(<span style="font-weight: bold; text-decoration: underline;">this</span>.fromID,<span style="font-weight: bold; text-decoration: underline;">this</span>.toID);
+        }
+}
+
+
+UndoConnect.<span style="font-weight: bold; text-decoration: underline;">prototype</span>.addUndoAnimation = <span style="font-weight: bold;">function</span>(<span style="font-weight: bold; font-style: italic;">animationList</span>)
+{
+        <span style="font-weight: bold;">return</span> <span style="font-weight: bold; text-decoration: underline;">false</span>;
+}
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2537ed8" class="outline-2">
+<h2 id="org2537ed8"><span class="section-number-2">4</span> Tangle</h2>
+<div class="outline-text-2" id="text-4">
+<div class="org-src-container">
+<pre class="src src-js">&lt;&lt;Line&gt;&gt;
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: VLEAD</p>
+<p class="date">Created: 2021-03-17 Wed 07:39</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
