@@ -9,7 +9,8 @@
             },
             "correctAnswer": "a",
             "explanations": {
-                "a": "Every path from the root node to the leaf node has the same length."
+                "a": "Correct. Every path from the root node to the leaf node has the same length in a 2-3 tree, making it a perfectly balanced tree.",
+                "b": "Incorrect. A 2-3 tree is indeed a perfectly balanced binary search tree where all leaf nodes are at the same level."
             },
             "difficulty": "beginner"
         },
@@ -23,10 +24,10 @@
             },
             "correctAnswer": "c",
             "explanations": {
-                "a": "This choice would make the 3-node unsorted. Data items less than the middle node should be on the left side, not the right side.",
-                "b": "It is not necessary that the data item in the right node will always be equal to data items in the middle and root nodes.",
-                "c": "The smallest data item is in the left node. The data item greater than the root node data item is in the middle node and the data item is greater than both the middle node data item and the root node data item is in the right node.",
-                "d": "This choice would make the 3-node unsorted. A data item less than the root node data items should be placed in the left node."
+                "a": "Incorrect. This choice would make the 3-node unsorted. Data items less than the middle node should be on the left side, not the right side.",
+                "b": "Incorrect. It is not necessary that the data item in the right node will always be equal to data items in the middle and root nodes.",
+                "c": "Correct. The smallest data item is in the left node. The data item greater than the root node data item is in the middle node and the data item is greater than both the middle node data item and the root node data item is in the right node.",
+                "d": "Incorrect. This choice would make the 3-node unsorted. A data item less than the root node data items should be placed in the left node."
             },
             "difficulty": "intermediate"
         },
@@ -40,10 +41,10 @@
             },
             "correctAnswer": "d",
             "explanations": {
-                "a": "Even though normal binary search trees have average lookup time complexity of O(log n), in worst cases it will increase to O(n) time complexity. Thus, they are not the most optimal choice of given options.",
-                "b": "Even though treaps have average lookup time complexity of O(log n), in worst cases it will increase to O(n) time complexity. Thus, they are not the most optimal choice of given options.",
-                "c": "The average lookup time complexity itself is O(n) in unordered lists. They are the worst of the given choices for implementation of searching operation.",
-                "d": "Both the average case and worst case lookup time is O(log n) in 2-3 tree. Therefore, they are the best choice for implementation of searching operation."
+                "a": "Incorrect. Even though normal binary search trees have average lookup time complexity of O(log n), in worst cases it will increase to O(n) time complexity. Thus, they are not the most optimal choice of given options.",
+                "b": "Incorrect. Even though treaps have average lookup time complexity of O(log n), in worst cases it will increase to O(n) time complexity. Thus, they are not the most optimal choice of given options.",
+                "c": "Incorrect. The average lookup time complexity itself is O(n) in unordered lists. They are the worst of the given choices for implementation of searching operation.",
+                "d": "Correct. Both the average case and worst case lookup time is O(log n) in 2-3 tree. Therefore, they are the best choice for implementation of searching operation."
             },
             "difficulty": "intermediate"
         },
@@ -57,9 +58,10 @@
             },
             "correctAnswer": "b",
             "explanations": {
-                "a": "Having upto 3 children alone does not grant any advantage to 2-3 trees over normal binary search trees.",
-                "b": "2-3 trees are always balanced in nature. Therefore, even in the worst case their height will be O(log n) compared to normal binary search trees whose height can increase to O(n) in worst cases. Moreover, this guarantees that the worst case time complexity for insertion, deletion, and searching will be O(log n) for 2-3 trees. Meanwhile for normal binary search tree worst case time complexity for insertion, deletion, and searching will be O(n).",
-                "c": "Normal binary search trees can also have the leaf nodes at the same level. Moreover, just having leaf nodes at the same level does not offer any advantage to 2-3 trees."
+                "a": "Incorrect. Having upto 3 children alone does not grant any advantage to 2-3 trees over normal binary search trees.",
+                "b": "Correct. 2-3 trees are always balanced in nature. Therefore, even in the worst case their height will be O(log n) compared to normal binary search trees whose height can increase to O(n) in worst cases. Moreover, this guarantees that the worst case time complexity for insertion, deletion, and searching will be O(log n) for 2-3 trees. Meanwhile for normal binary search tree worst case time complexity for insertion, deletion, and searching will be O(n).",
+                "c": "Incorrect. Normal binary search trees can also have the leaf nodes at the same level. Moreover, just having leaf nodes at the same level does not offer any advantage to 2-3 trees.",
+                "d": "Incorrect. 2-3 trees have significant advantages over binary search trees, particularly in maintaining balance."
             },
             "difficulty": "intermediate"
         },
@@ -73,7 +75,10 @@
             },
             "correctAnswer": "a",
             "explanations": {
-                "a": "Since the nodes are sorted in a 2-3 tree at every level, only inorder traversal would ensure that the obtained elements are in a sorted fashion."
+                "a": "Correct. Since the nodes are sorted in a 2-3 tree at every level, only inorder traversal would ensure that the obtained elements are in a sorted fashion.",
+                "b": "Incorrect. Postorder traversal visits children before parents and doesn't produce sorted output in a 2-3 tree.",
+                "c": "Incorrect. Preorder traversal visits parents before children and doesn't produce sorted output in a 2-3 tree.",
+                "d": "Incorrect. Inorder traversal does produce sorted output in a 2-3 tree."
             },
             "difficulty": "intermediate"
         },
@@ -85,8 +90,8 @@
             },
             "correctAnswer": "a",
             "explanations": {
-                "a": "Although the look-up complexity is the same as AVL trees",
-                "b": "AVL trees take more time O(log n) to rebalance the tree for insertion compared to 2-3 trees which take O(1) time."
+                "a": "Correct. Although the look-up complexity is the same as AVL trees, 2-3 trees provide better insertion performance because they require fewer rotations and rebalancing operations.",
+                "b": "Incorrect. AVL trees take more time O(log n) to rebalance the tree for insertion compared to 2-3 trees which require fewer rebalancing operations."
             },
             "difficulty": "advanced"
         }
