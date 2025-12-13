@@ -11,10 +11,10 @@
             },
             "correctAnswer": "a",
             "explanations": {
-                "a": "As the name suggests, 2-3 Trees\u2019 internal nodes can have either 2 or 3 children.",
-                "b": "Leaf nodes do not have children.",
-                "c": "2-3 Tree guarantee a O(log n) worst case time complexity, not O(n)",
-                "d": "Root node of a 2-3 tree can have either 2 or 3 children, not 5."
+                "a": "Correct. As the name suggests, 2-3 Trees’ internal nodes can have either 2 or 3 children.",
+                "b": "Incorrect. Leaf nodes do not have children.",
+                "c": "Incorrect. 2-3 Tree guarantee a O(log n) worst case time complexity, not O(n).",
+                "d": "Incorrect. Root node of a 2-3 tree can have either 2 or 3 children, not 5."
             },
             "difficulty": "intermediate"
         },
@@ -25,7 +25,10 @@
                 "b": "False"
             },
             "correctAnswer": "a",
-            "explanations": {},
+            "explanations": {
+                "a": "Correct. All leaf nodes of a 2-3 tree are at the same level, which is one of the defining properties of 2-3 trees.",
+                "b": "Incorrect. All leaf nodes of a 2-3 tree must be at the same level to maintain the tree's balanced structure."
+            },
             "difficulty": "beginner"
         },
         {
@@ -37,9 +40,9 @@
             },
             "correctAnswer": "b",
             "explanations": {
-                "a": "Searching still needs to be implemented in order to Insert or Delete in a 2-3 tree.",
-                "b": "What makes Insertion and Deletion in a 2-3 tree different from that in a binary search tree is the different actions that need to be performed so that the properties of a 2-3 tree are not violated.",
-                "c": "Only Searching is similar in binary search tree and 2-3 trees. Insertion and Deletion follow different processes in 2-3 trees."
+                "a": "Incorrect. Searching still needs to be implemented in order to Insert or Delete in a 2-3 tree.",
+                "b": "Correct. What makes Insertion and Deletion in a 2-3 tree different from that in a binary search tree is the different actions that need to be performed so that the properties of a 2-3 tree are not violated.",
+                "c": "Incorrect. Only Searching is similar in binary search tree and 2-3 trees. Insertion and Deletion follow different processes in 2-3 trees."
             },
             "difficulty": "intermediate"
         },
@@ -51,8 +54,8 @@
             },
             "correctAnswer": "b",
             "explanations": {
-                "a": "Although Insertion and Deletion processes are different between 2-3 trees and Binary Search trees, the Searching process is pretty much the same.",
-                "b": "Searching in 2-3 trees and binary search trees are similar as the data elements in each node are ordered in both the trees. We normally direct a search function to the correct subtree and eventually the correct node with the desired item is found."
+                "a": "Incorrect. Although Insertion and Deletion processes are different between 2-3 trees and Binary Search trees, the Searching process is pretty much the same.",
+                "b": "Correct. Searching in 2-3 trees and binary search trees are similar as the data elements in each node are ordered in both the trees. We normally direct a search function to the correct subtree and eventually the correct node with the desired item is found."
             },
             "difficulty": "beginner"
         }
