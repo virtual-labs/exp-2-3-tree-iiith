@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-03-17 Wed 07:39 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="VLEAD" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2017 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgaaab56f">1. Exercise Artefact for 2-3 Tree</a>
+<ul>
+<li><a href="#orge49f455">1.1. Features</a></li>
+</ul>
+</li>
+<li><a href="#orge33283a">2. HTML Framework</a>
+<ul>
+<li><a href="#orgcdc42c6">2.1. Importing required libraries,CSS,Javascript files</a></li>
+<li><a href="#org5065d12">2.2. Import CSS required by the animated artefacts.</a></li>
+<li><a href="#org75f7c46">2.3. Javascript Library Imports</a></li>
+<li><a href="#org3a275e6">2.4. Instruction Box</a></li>
+<li><a href="#orgcef18ca">2.5. Algorithm Selection Control</a></li>
+<li><a href="#orgc106860">2.6. General Animation Control, Next Element and Comment Box</a></li>
+</ul>
+</li>
+<li><a href="#org0829c41">3. Tangle</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgaaab56f" class="outline-2">
+<h2 id="orgaaab56f"><span class="section-number-2">1</span> Exercise Artefact for 2-3 Tree</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-orge49f455" class="outline-3">
+<h3 id="orge49f455"><span class="section-number-3">1.1</span> Features</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>User can insert,search ,delete a node in a 2-3 tree</li>
+
+<li>User can visualize the movement of nodes clearly along with viewing the required steps</li>
+
+<li>User can control the speed of the animation</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge33283a" class="outline-2">
+<h2 id="orge33283a"><span class="section-number-2">2</span> HTML Framework</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgcdc42c6" class="outline-3">
+<h3 id="orgcdc42c6"><span class="section-number-3">2.1</span> Importing required libraries,CSS,Javascript files</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>The css files are initially imported.</li>
+
+<li>The required animation libraries are imported</li>
+
+<li>The required artefact javascript files are imported.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org5065d12" class="outline-3">
+<h3 id="org5065d12"><span class="section-number-3">2.2</span> Import CSS required by the animated artefacts.</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>Here, we import the CSS required by the animated artefacts.</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-html" id="org775bbdb">
+&lt;<span style="font-weight: bold;">!DOCTYPE</span> html&gt;
+&lt;<span style="font-weight: bold;">html</span>&gt;
+        &lt;<span style="font-weight: bold;">head</span>&gt;
+                &lt;<span style="font-weight: bold;">link</span> <span style="font-weight: bold; font-style: italic;">rel</span>=<span style="font-style: italic;">"stylesheet"</span> <span style="font-weight: bold; font-style: italic;">href</span>=<span style="font-style: italic;">"../css/style.css"</span>&gt;
+                &lt;<span style="font-weight: bold;">link</span> <span style="font-weight: bold; font-style: italic;">rel</span>=<span style="font-style: italic;">"stylesheet"</span> <span style="font-weight: bold; font-style: italic;">href</span>=<span style="font-style: italic;">"../css/jquery-ui-1.8.11.custom.css"</span>&gt;
+                &lt;<span style="font-weight: bold;">link</span> <span style="font-weight: bold; font-style: italic;">rel</span>=<span style="font-style: italic;">"stylesheet"</span> <span style="font-weight: bold; font-style: italic;">href</span>=<span style="font-style: italic;">"https://ds1-iiith.vlabs.ac.in/exp-common-css/common-styles.css"</span>&gt;
+                &lt;<span style="font-weight: bold;">link</span> <span style="font-weight: bold; font-style: italic;">rel</span>=<span style="font-style: italic;">"stylesheet"</span> <span style="font-weight: bold; font-style: italic;">href</span>=<span style="font-style: italic;">"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"</span>
+        <span style="font-weight: bold; font-style: italic;">integrity</span>=<span style="font-style: italic;">"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"</span> <span style="font-weight: bold; font-style: italic;">crossorigin</span>=<span style="font-style: italic;">"anonymous"</span>&gt;
+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org75f7c46" class="outline-3">
+<h3 id="org75f7c46"><span class="section-number-3">2.3</span> Javascript Library Imports</h3>
+<div class="outline-text-3" id="text-2-3">
+<ul class="org-ul">
+<li>The animated artefacts use a library to render animated objects on the UI.</li>
+<li>Following are the required imports from the library</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-html" id="orge5ea28d">
+                &lt;<span style="font-weight: bold;">script</span> <span style="font-weight: bold; font-style: italic;">src</span>=<span style="font-style: italic;">"https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"</span>&gt;&lt;/<span style="font-weight: bold;">script</span>&gt;
+                &lt;<span style="font-weight: bold;">script</span> <span style="font-weight: bold; font-style: italic;">src</span>=<span style="font-style: italic;">"http://code.jquery.com/ui/1.9.2/jquery-ui.js"</span>&gt;&lt;/<span style="font-weight: bold;">script</span>&gt;
+                &lt;<span style="font-weight: bold;">script</span> type = <span style="font-style: italic;">"text/javascript"</span> src = <span style="font-style: italic;">"../js/lib/CustomEvents.js"</span>&gt; &lt;/<span style="font-weight: bold;">script</span>&gt;
+                &lt;<span style="font-weight: bold;">script</span> type = <span style="font-style: italic;">"text/javascript"</span> src = <span style="font-style: italic;">"../js/lib/UndoFunctions.js"</span>&gt; &lt;/<span style="font-weight: bold;">script</span>&gt;
+                &lt;<span style="font-weight: bold;">script</span> type = <span style="font-style: italic;">"text/javascript"</span> src = <span style="font-style: italic;">"../js/lib/AnimatedObject.js"</span>&gt; &lt;/<span style="font-weight: bold;">script</span>&gt;
+                &lt;<span style="font-weight: bold;">script</span> type = <span style="font-style: italic;">"text/javascript"</span> src = <span style="font-style: italic;">"../js/lib/AnimatedLabel.js"</span>&gt; &lt;/<span style="font-weight: bold;">script</span>&gt;
+                &lt;<span style="font-weight: bold;">script</span> type = <span style="font-style: italic;">"text/javascript"</span> src = <span style="font-style: italic;">"../js/lib/Line.js"</span>&gt; &lt;/<span style="font-weight: bold;">script</span>&gt;
+                &lt;<span style="font-weight: bold;">script</span> type = <span style="font-style: italic;">"text/javascript"</span> src = <span style="font-style: italic;">"../js/lib/ObjectManager.js"</span>&gt; &lt;/<span style="font-weight: bold;">script</span>&gt;
+                &lt;<span style="font-weight: bold;">script</span> type = <span style="font-style: italic;">"text/javascript"</span> src = <span style="font-style: italic;">"../js/lib/AnimationMain.js"</span>&gt; &lt;/<span style="font-weight: bold;">script</span>&gt;
+                &lt;<span style="font-weight: bold;">script</span> type = <span style="font-style: italic;">"text/javascript"</span> src = <span style="font-style: italic;">"../js/lib/AnimatedBTreeNode.js"</span>&gt; &lt;/<span style="font-weight: bold;">script</span>&gt;
+                &lt;<span style="font-weight: bold;">script</span> type = <span style="font-style: italic;">"text/javascript"</span> src = <span style="font-style: italic;">"../js/lib/Algorithm.js"</span>&gt; &lt;/<span style="font-weight: bold;">script</span>&gt;
+                &lt;<span style="font-weight: bold;">script</span> type = <span style="font-style: italic;">"text/javascript"</span> src = <span style="font-style: italic;">"../js/TwoThreeTreeExercise.js"</span>&gt; &lt;/<span style="font-weight: bold;">script</span>&gt;
+                &lt;<span style="font-weight: bold;">link</span> <span style="font-weight: bold; font-style: italic;">rel</span>=<span style="font-style: italic;">"stylesheet"</span> <span style="font-weight: bold; font-style: italic;">href</span>=<span style="font-style: italic;">"https://ds1-iiith.vlabs.ac.in/exp-common-css/common-styles.css"</span>&gt;
+                &lt;<span style="font-weight: bold;">script</span> <span style="font-weight: bold; font-style: italic;">src</span>=<span style="font-style: italic;">"https://ds1-iiith.vlabs.ac.in/exp-common-js/instruction-box.js"</span>&gt;&lt;/<span style="font-weight: bold;">script</span>&gt;
+        &lt;/<span style="font-weight: bold;">head</span>&gt; 
+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3a275e6" class="outline-3">
+<h3 id="org3a275e6"><span class="section-number-3">2.4</span> Instruction Box</h3>
+<div class="outline-text-3" id="text-2-4">
+<ul class="org-ul">
+<li>The instruction box above the artefact carries information about how to use the artefact.</li>
+<li>It has details over how the controls presented on the screen work.</li>
+<li>A brief description of the usage of artefacts is also provided here.</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-html" id="org3fb9bfe">
+        &lt;<span style="font-weight: bold;">body</span> <span style="font-weight: bold; font-style: italic;">onload</span>=<span style="font-style: italic;">"init();"</span> <span style="font-weight: bold; font-style: italic;">class</span>=<span style="font-style: italic;">"VisualizationMainPage"</span>&gt;
+
+        &lt;<span style="font-weight: bold;">div</span> <span style="font-weight: bold; font-style: italic;">class</span>=<span style="font-style: italic;">"instruction-box"</span>&gt;
+                &lt;<span style="font-weight: bold;">button</span> <span style="font-weight: bold; font-style: italic;">class</span>=<span style="font-style: italic;">"collapsible"</span>&gt;Instructions&lt;/<span style="font-weight: bold;">button</span>&gt;
+                &lt;<span style="font-weight: bold;">div</span> <span style="font-weight: bold; font-style: italic;">class</span>=<span style="font-style: italic;">"content"</span>&gt;
+                        &lt;<span style="font-weight: bold;">ul</span>&gt;
+                          &lt;<span style="font-weight: bold;">li</span>&gt;Click on &lt;<span style="font-weight: bold;">b</span>&gt;<span style="font-weight: bold;">Generate Root</span>&lt;/<span style="font-weight: bold;">b</span>&gt; to generate root of the 23 tree.&lt;/<span style="font-weight: bold;">li</span>&gt;
+                          &lt;<span style="font-weight: bold;">li</span>&gt;Depending on the &lt;<span style="font-weight: bold;">b</span>&gt;<span style="font-weight: bold;">Next element to be inserted</span>&lt;/<span style="font-weight: bold;">b</span>&gt; select one of the operations.&lt;/<span style="font-weight: bold;">li</span>&gt;
+                          &lt;<span style="font-weight: bold;">li</span>&gt;Click &lt;<span style="font-weight: bold;">b</span>&gt;<span style="font-weight: bold;">Insert</span>&lt;/<span style="font-weight: bold;">b</span>&gt; if the element to be inserted does not cause any split.&lt;/<span style="font-weight: bold;">li</span>&gt;
+                          &lt;<span style="font-weight: bold;">li</span>&gt;Click &lt;<span style="font-weight: bold;">b</span>&gt;<span style="font-weight: bold;">Insert Left</span>&lt;/<span style="font-weight: bold;">b</span>&gt; if the element gets inserted in the left of root.&lt;/<span style="font-weight: bold;">li</span>&gt;
+                          &lt;<span style="font-weight: bold;">li</span>&gt;Your sequence of operation will be recorded.&lt;/<span style="font-weight: bold;">li</span>&gt;
+                          &lt;<span style="font-weight: bold;">li</span>&gt;Click on &lt;<span style="font-weight: bold;">b</span>&gt;<span style="font-weight: bold;">Submit</span>&lt;/<span style="font-weight: bold;">b</span>&gt; when there are no more elements to insert.&lt;/<span style="font-weight: bold;">li</span>&gt;
+                          &lt;<span style="font-weight: bold;">li</span>&gt;You can check your answer by clicking &lt;<span style="font-weight: bold;">b</span>&gt;<span style="font-weight: bold;">Show Steps</span>&lt;/<span style="font-weight: bold;">b</span>&gt; for a step by step solution.&lt;/<span style="font-weight: bold;">li</span>&gt;
+                        &lt;/<span style="font-weight: bold;">ul</span>&gt; 
+                &lt;/<span style="font-weight: bold;">div</span>&gt;
+        &lt;/<span style="font-weight: bold;">div</span>&gt;
+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgcef18ca" class="outline-3">
+<h3 id="orgcef18ca"><span class="section-number-3">2.5</span> Algorithm Selection Control</h3>
+<div class="outline-text-3" id="text-2-5">
+<ul class="org-ul">
+<li>This div has the main content which renderes the algorithm specific control of the artefacts</li>
+<li>These controls are displayed in the form of buttons and check boxes.</li>
+<li>Table for buttons to control specific animation (insert/find/etc)</li>
+<li>Filled in by javascript code specific to the animtion</li>
+<li>Also has drawing canvas where all animation is done</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-html" id="org44d906c">
+                &lt;<span style="font-weight: bold;">div</span> id = <span style="font-style: italic;">"container"</span>&gt;
+                        &lt;<span style="font-weight: bold;">div</span> id = <span style="font-style: italic;">"mainContent"</span>&gt; 
+                                &lt;<span style="font-weight: bold;">div</span> id = <span style="font-style: italic;">"algoControlSection"</span>&gt;
+                                        &lt;<span style="font-weight: bold;">div</span> <span style="font-weight: bold; font-style: italic;">id</span>=<span style="font-style: italic;">"AlgorithmSpecificControls"</span> <span style="font-weight: bold; font-style: italic;">class</span>=<span style="font-style: italic;">"form-inline input-group container-fluid"</span> <span style="font-weight: bold; font-style: italic;">style</span>=<span style="font-style: italic;">"padding-left: 0px !important;padding-right: 0px !important;"</span>&gt;
+                                                &lt;<span style="font-weight: bold;">button</span> <span style="font-weight: bold; font-style: italic;">style</span>=<span style="font-style: italic;">"padding-left: 1% !important;padding-right: 1% !important;"</span> <span style="font-weight: bold; font-style: italic;">class</span>=<span style="font-style: italic;">"button-input"</span> <span style="font-weight: bold; font-style: italic;">id</span>=<span style="font-style: italic;">"control-exer-root"</span>&gt;Generate Root&lt;/<span style="font-weight: bold;">button</span>&gt;
+                                                &lt;<span style="font-weight: bold;">button</span> <span style="font-weight: bold; font-style: italic;">style</span>=<span style="font-style: italic;">"padding-left: 1% !important;padding-right: 1% !important;"</span> <span style="font-weight: bold; font-style: italic;">class</span>=<span style="font-style: italic;">"button-input"</span> <span style="font-weight: bold; font-style: italic;">id</span>=<span style="font-style: italic;">"control-exer-insert-same"</span>&gt;Insert in Place&lt;/<span style="font-weight: bold;">button</span>&gt;
+                                                &lt;<span style="font-weight: bold;">button</span> <span style="font-weight: bold; font-style: italic;">style</span>=<span style="font-style: italic;">"padding-left: 1% !important;padding-right: 1% !important;"</span> <span style="font-weight: bold; font-style: italic;">class</span>=<span style="font-style: italic;">"button-input"</span> <span style="font-weight: bold; font-style: italic;">id</span>=<span style="font-style: italic;">"control-exer-insert-l"</span>&gt;Insert Left&lt;/<span style="font-weight: bold;">button</span>&gt;
+                                                &lt;<span style="font-weight: bold;">button</span> <span style="font-weight: bold; font-style: italic;">style</span>=<span style="font-style: italic;">"padding-left: 1% !important;padding-right: 1% !important;"</span> <span style="font-weight: bold; font-style: italic;">class</span>=<span style="font-style: italic;">"button-input"</span> <span style="font-weight: bold; font-style: italic;">id</span>=<span style="font-style: italic;">"control-exer-insert-m"</span>&gt;Insert Middle&lt;/<span style="font-weight: bold;">button</span>&gt;
+                                                &lt;<span style="font-weight: bold;">button</span> <span style="font-weight: bold; font-style: italic;">style</span>=<span style="font-style: italic;">"padding-left: 1% !important;padding-right: 1% !important;"</span> <span style="font-weight: bold; font-style: italic;">class</span>=<span style="font-style: italic;">"button-input"</span> <span style="font-weight: bold; font-style: italic;">id</span>=<span style="font-style: italic;">"control-exer-insert-r"</span>&gt;Insert Right&lt;/<span style="font-weight: bold;">button</span>&gt;
+                                                &lt;<span style="font-weight: bold;">button</span> <span style="font-weight: bold; font-style: italic;">style</span>=<span style="font-style: italic;">"padding-left: 1% !important;padding-right: 1% !important;"</span> <span style="font-weight: bold; font-style: italic;">class</span>=<span style="font-style: italic;">"button-input"</span> <span style="font-weight: bold; font-style: italic;">id</span>=<span style="font-style: italic;">"control-exer-insert-split"</span>&gt;Insert and Split&lt;/<span style="font-weight: bold;">button</span>&gt;
+                                                &lt;<span style="font-weight: bold;">button</span> <span style="font-weight: bold; font-style: italic;">style</span>=<span style="font-style: italic;">"padding-left: 1% !important;padding-right: 1% !important;"</span> <span style="font-weight: bold; font-style: italic;">class</span>=<span style="font-style: italic;">"button-input"</span> <span style="font-weight: bold; font-style: italic;">id</span>=<span style="font-style: italic;">"control-exer-steps"</span>&gt;Show Steps&lt;/<span style="font-weight: bold;">button</span>&gt;
+                                                &lt;<span style="font-weight: bold;">button</span> <span style="font-weight: bold; font-style: italic;">style</span>=<span style="font-style: italic;">"padding-left: 1% !important;padding-right: 1% !important;"</span> <span style="font-weight: bold; font-style: italic;">class</span>=<span style="font-style: italic;">"button-input"</span> <span style="font-weight: bold; font-style: italic;">id</span>=<span style="font-style: italic;">"control-exer-submit"</span>&gt;Submit&lt;/<span style="font-weight: bold;">button</span>&gt;
+                                                &lt;<span style="font-weight: bold;">button</span> <span style="font-weight: bold; font-style: italic;">style</span>=<span style="font-style: italic;">"padding-left: 1% !important;padding-right: 1% !important;"</span> <span style="font-weight: bold; font-style: italic;">class</span>=<span style="font-style: italic;">"button-input"</span> <span style="font-weight: bold; font-style: italic;">id</span>=<span style="font-style: italic;">"control-exer-reset"</span>&gt;Reset&lt;/<span style="font-weight: bold;">button</span>&gt;
+                                                &lt;<span style="font-weight: bold;">label</span> <span style="font-weight: bold; font-style: italic;">style</span>=<span style="font-style: italic;">"display:none;"</span>&gt;&lt;<span style="font-weight: bold;">input</span> <span style="font-weight: bold; font-style: italic;">type</span>=<span style="font-style: italic;">"checkbox"</span> <span style="font-weight: bold; font-style: italic;">id</span>=<span style="font-style: italic;">"control-exer-null"</span>&gt;Show null Leaves&lt;/<span style="font-weight: bold;">label</span>&gt;
+                                        &lt;/<span style="font-weight: bold;">div</span>&gt;
+                                &lt;/<span style="font-weight: bold;">div</span>&gt;
+                                        &lt;<span style="font-weight: bold;">div</span> <span style="font-weight: bold; font-style: italic;">class</span>=<span style="font-style: italic;">"row"</span> <span style="font-weight: bold; font-style: italic;">style</span>=<span style="font-style: italic;">"margin:auto;padding-top:2%;padding-left:125px;padding-right:125px;height:16vh;"</span>&gt;
+                                        &lt;<span style="font-weight: bold;">div</span> <span style="font-weight: bold; font-style: italic;">class</span>=<span style="font-style: italic;">"col-md-7 col-xs-12"</span>&gt;
+                                                &lt;<span style="font-weight: bold;">div</span> <span style="font-weight: bold; font-style: italic;">class</span>=<span style="font-style: italic;">"comment-box"</span>&gt;
+                                                        &lt;<span style="font-weight: bold;">b</span>&gt;<span style="font-weight: bold;">Next Element to be Inserted</span>&lt;/<span style="font-weight: bold;">b</span>&gt;
+                                                        &lt;<span style="font-weight: bold;">p</span> <span style="font-weight: bold; font-style: italic;">id</span>=<span style="font-style: italic;">"nextelement"</span>&gt; &lt;/<span style="font-weight: bold;">p</span>&gt;
+                                                &lt;/<span style="font-weight: bold;">div</span>&gt;
+                                        &lt;/<span style="font-weight: bold;">div</span>&gt;
+                                        &lt;<span style="font-weight: bold;">div</span> <span style="font-weight: bold; font-style: italic;">class</span>=<span style="font-style: italic;">"col-md-5 col-xs-12"</span>&gt;
+                                                &lt;<span style="font-weight: bold;">div</span> <span style="font-weight: bold; font-style: italic;">class</span>=<span style="font-style: italic;">"comment-box"</span>&gt;
+                                                        &lt;<span style="font-weight: bold;">b</span>&gt;<span style="font-weight: bold;">Observations</span>&lt;/<span style="font-weight: bold;">b</span>&gt;
+                                                        &lt;<span style="font-weight: bold;">p</span> <span style="font-weight: bold; font-style: italic;">id</span>=<span style="font-style: italic;">"nextcomment"</span>&gt; &lt;/<span style="font-weight: bold;">p</span>&gt;
+                                                &lt;/<span style="font-weight: bold;">div</span>&gt;
+                                        &lt;/<span style="font-weight: bold;">div</span>&gt;
+                                &lt;/<span style="font-weight: bold;">div</span>&gt;
+                                &lt;<span style="font-weight: bold;">canvas</span> <span style="font-weight: bold; font-style: italic;">id</span>=<span style="font-style: italic;">"canvas"</span> <span style="font-weight: bold; font-style: italic;">width</span>=<span style="font-style: italic;">"1200"</span> <span style="font-weight: bold; font-style: italic;">height</span>=<span style="font-style: italic;">"300"</span>&gt;&lt;/<span style="font-weight: bold;">canvas</span>&gt;
+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc106860" class="outline-3">
+<h3 id="orgc106860"><span class="section-number-3">2.6</span> General Animation Control, Next Element and Comment Box</h3>
+<div class="outline-text-3" id="text-2-6">
+<ul class="org-ul">
+<li>Table for buttons to control specific animation (insert/find/etc)</li>
+<li>Filled in by javascript code specific to the animtion such as play, pause, skip e.t.c</li>
+<li>Next Element div displays the the question, about the next element to be inserted into the tree.</li>
+<li>The comment box displays a message to the user at each step while interacting with the artefact.</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-html" id="org08dfb65">
+                                &lt;<span style="font-weight: bold;">div</span> id = <span style="font-style: italic;">"generalAnimationControlSection"</span> <span style="font-weight: bold; font-style: italic;">style</span>=<span style="font-style: italic;">"display:none;"</span>&gt;
+                                        &lt;<span style="font-weight: bold;">table</span> <span style="font-weight: bold; font-style: italic;">id</span>=<span style="font-style: italic;">"GeneralAnimationControls"</span>&gt;  &lt;/<span style="font-weight: bold;">table</span>&gt;                                                 
+                                &lt;/<span style="font-weight: bold;">div</span>&gt;
+                                
+                        &lt;/<span style="font-weight: bold;">div</span>&gt;
+
+                &lt;<span style="font-weight: bold;">script</span>&gt;
+        var collapsibleEl = document.getElementsByClassName(<span style="font-style: italic;">"collapsible"</span>)[0];
+        collapsibleEl.addEventListener(<span style="font-style: italic;">"click"</span>, function() {
+            this.classList.toggle(<span style="font-style: italic;">"active"</span>);
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + <span style="font-style: italic;">"px"</span>;
+            }
+        });
+    &lt;/<span style="font-weight: bold;">script</span>&gt;
+
+        &lt;/<span style="font-weight: bold;">body</span>&gt;
+&lt;/<span style="font-weight: bold;">html</span>&gt;
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0829c41" class="outline-2">
+<h2 id="org0829c41"><span class="section-number-2">3</span> Tangle</h2>
+<div class="outline-text-2" id="text-3">
+<div class="org-src-container">
+<pre class="src src-js">&lt;&lt;cssimports&gt;&gt;
+&lt;&lt;jslibimports&gt;&gt;
+&lt;&lt;instructionbox&gt;&gt;
+&lt;&lt;algoselection&gt;&gt;
+&lt;&lt;generalanimcontrol&gt;&gt;
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: VLEAD</p>
+<p class="date">Created: 2021-03-17 Wed 07:39</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
