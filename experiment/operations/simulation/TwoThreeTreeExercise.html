@@ -37,7 +37,7 @@
 			  <li>Click <b>Insert Left</b> if the element gets inserted in the left of root.</li>
 			  <li>Your sequence of operation will be recorded.</li>
 			  <li>Click on <b>Submit</b> when there are no more elements to insert.</li>
-			  <li>You can check your answer by clicking <b>Show Steps</b> for a step by step solution.</li>
+			  <li>You can check your answer by clicking <b>Show Steps</b> multiple times for each step by step solution.</li>
 		  	</ul> 
 		</div>
 	</div>
@@ -59,25 +59,32 @@
 		                                <label style="display:none;"><input type="checkbox" id="control-exer-null">Show null Leaves</label>
 					</div>
 				</div>
-                                	<div class="row" style="margin:auto;padding-top:2%;padding-left:125px;padding-right:125px;height:16vh;">
-					<div class="col-md-7 col-xs-12">
-						<div class="comment-box">
-							<b>Next Element to be Inserted</b>
-							<p id="nextelement"> </p>
-						</div>
-					</div>
-					<div class="col-md-5 col-xs-12">
-						<div class="comment-box">
-							<b>Observations</b>
-							<p id="nextcomment"> </p>
-						</div>
-					</div>
-				</div>
-				<canvas id="canvas" width="1200" height="300"></canvas>
+									<div class="row" style="margin:auto;padding-top:2%;padding-left:125px;padding-right:125px;height:16vh;">
+										<div class="col-md-7 col-xs-12">
+											<div class="comment-box">
+												<b>Next Element to be Inserted</b>
+												<p id="nextelement"> </p>
+											</div>
+										</div>
+										<div class="col-md-5 col-xs-12">
+											<div class="comment-box">
+												<b>Observations</b>
+												<ul id="observation-history" style="text-align:left; padding-left: 1em;"></ul>
+											</div>
+										</div>
+									</div>
+									<div class="row" style="margin:auto; padding-top:2%; padding-left:125px; padding-right:125px;">
+										<div class="col-md-6 col-xs-12">
+											<div style="text-align:center;">
+												<b>Your Tree</b>
+											</div>
+											<canvas id="canvas" width="600" height="300"></canvas>
+										</div>
+										<!-- Solution Tree removed. Only user tree and observations remain. -->
+									</div>
 
-
-				<div id = "generalAnimationControlSection" style="display:none;">
-					<table id="GeneralAnimationControls">  </table>							
+									<div id = "generalAnimationControlSection" style="display:none;">
+										<table id="GeneralAnimationControls">  </table>                            
 				</div>
 				
 			</div>
